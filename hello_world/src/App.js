@@ -3,9 +3,13 @@ import React from 'react';
 
 function App() {
   return (
-    <h1 className="App">
-      Hello World
-    </h1>
+    <React.Fragment>
+      <label htmlFor="bar">
+        bar
+      </label>
+      <input type="text" />
+    </React.Fragment>
+    // <button type="text" onClick={() => alert("I'm clicked")} />
   );
 }
 
