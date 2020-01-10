@@ -22,10 +22,10 @@ const store = createStore(reducer, applyMiddleware(thunk))
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <switch>
+            <Switch>
                 <Route exact path="/events/new" component={EventsNew} ></Route>
                 <Route exact path="/" component={EventsIndex} ></Route>
-            </switch>
+            </Switch>
         </BrowserRouter>
     </Provider>,
     document.getElementById('root')
