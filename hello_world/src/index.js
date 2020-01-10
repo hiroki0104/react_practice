@@ -9,8 +9,14 @@ import reducer from './reducers'
 import EventsIndex from './components/event_index';
 import * as serviceWorker from './serviceWorker';
 
+// console.log(applyMiddleware)
 
-const store = createStore(reducer , applyMiddleware(thunk))
+// const store = createStore(reducer)
+
+const store = createStore(reducer, applyMiddleware(thunk))
+
+// console.log(store)
+// console.log(store1)
 
 ReactDOM.render(
     <Provider store={store}>
